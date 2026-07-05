@@ -1,1 +1,3 @@
-# student_dropout_project
+# Using Machine Learning to Predict Studet Dropouts 📚
+
+
