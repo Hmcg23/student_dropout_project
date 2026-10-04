@@ -25,7 +25,7 @@ export default function ClassDonut() {
           strokeWidth={2}
           label={({ percent }) => `${(percent * 100).toFixed(0)}%`}
           labelLine={{ stroke: "#8a8a8a", strokeWidth: 1 }}
-          fontFamily="'DM Mono', monospace"
+          fontFamily="'Geist Mono', monospace"
           fontSize={11}
         >
           {data.map((d) => (
@@ -43,7 +43,7 @@ export default function ClassDonut() {
           }
         />
         <Legend
-          wrapperStyle={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12 }}
+          wrapperStyle={{ fontFamily: "'Geist', sans-serif", fontSize: 12 }}
           iconType="square"
           iconSize={8}
         />

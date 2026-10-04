@@ -50,5 +50,5 @@ export const HEAT_TEXT_FLIP = 0.81;
 export const AXIS_TICK = {
   fill: MUTED,
   fontSize: 11,
-  fontFamily: "'DM Mono', monospace",
+  fontFamily: "'Geist Mono', monospace",
 };

@@ -12,16 +12,16 @@ const GITHUB_URL = "https://github.com/Hmcg23/student_dropout_project";
 function Hero() {
   return (
     <section className="max-w-3xl mx-auto px-6 pt-16 pb-12 border-b border-border">
-      <h1 className="font-['Lora'] text-4xl md:text-5xl font-semibold leading-[1.15] tracking-tight text-foreground mb-6">
+      <h1 className="font-['Manrope'] text-xl leading-[1.15] tracking-tight text-foreground mb-6">
         Predicting Student Dropouts Before It's Too Late
       </h1>
 
-      <p className="font-['DM_Sans'] text-lg text-muted-foreground leading-relaxed mb-10 font-light">
+      <p className="font-['Geist'] text-lg text-muted-foreground leading-relaxed mb-10 font-light">
         Using first-year academic, demographic, and socioeconomic data to flag at-risk
         students early enough to help them.
       </p>
 
-      <div className="flex flex-wrap items-center gap-6 text-sm font-['DM_Sans'] text-muted-foreground">
+      <div className="flex flex-wrap items-center gap-6 text-sm font-['Geist'] text-muted-foreground">
         <span>Hudson McGough</span>
         <span className="w-px h-3 bg-border" />
         <time dateTime="2026-07-18">July 2026</time>
@@ -52,20 +52,20 @@ function Section({
 }) {
   return (
     <section id={id} className="max-w-3xl mx-auto px-6 py-12 border-b border-border">
-      <h2 className="font-['Lora'] text-2xl font-semibold text-foreground mb-6">{heading}</h2>
+      <h2 className="font-['Manrope'] text-lg text-foreground mb-6">{heading}</h2>
       {children}
     </section>
   );
 }
 
-const bodyText = "font-['DM_Sans'] text-base leading-[1.85] text-foreground font-light";
+const bodyText = "font-['Geist'] text-base leading-[1.85] text-foreground font-light";
 
 function MethodologyLink() {
   return (
     <p className="mt-4">
       <Link
         to="/methodology"
-        className="font-['DM_Sans'] text-sm text-foreground border-b border-crimson hover:text-muted-foreground transition-colors"
+        className="font-['Geist'] text-sm text-foreground border-b border-crimson hover:text-muted-foreground transition-colors"
       >
         Full methodology →
       </Link>
@@ -172,7 +172,7 @@ export default function Home() {
             },
           ].map((t) => (
             <div key={t.title}>
-              <h3 className="font-['DM_Mono'] text-xs tracking-widest uppercase text-muted-foreground mb-2">
+              <h3 className="font-['Geist_Mono'] text-xs tracking-widest uppercase text-muted-foreground mb-2">
                 {t.title}
               </h3>
               <p className={bodyText}>{t.body}</p>
@@ -182,7 +182,7 @@ export default function Home() {
       </Section>
 
       <Section id="code" heading="Code">
-        <p className="font-['DM_Sans'] text-base leading-relaxed text-muted-foreground mb-6 font-light">
+        <p className="font-['Geist'] text-base leading-relaxed text-muted-foreground mb-6 font-light">
           The exploratory analysis, feature engineering, model selection, SMOTE experiments, and the evaluation code all live in a Jupyter notebook on Github.
         </p>
         <a
@@ -191,10 +191,10 @@ export default function Home() {
           rel="noreferrer"
           className="block border border-foreground rounded-sm p-6 hover:bg-foreground hover:text-background transition-colors group"
         >
-          <p className="font-['DM_Mono'] text-xs tracking-widest uppercase mb-2 text-muted-foreground group-hover:text-background/70">
+          <p className="font-['Geist_Mono'] text-xs tracking-widest uppercase mb-2 text-muted-foreground group-hover:text-background/70">
             github.com/Hmcg23
           </p>
-          <p className="font-['Lora'] text-xl font-semibold">
+          <p className="font-['Manrope'] text-xl">
             student_dropout_project →
           </p>
         </a>
@@ -202,7 +202,7 @@ export default function Home() {
 
       <Section id="references" heading="References">
         <ol className="space-y-3">
-          <li className="font-['DM_Sans'] text-sm text-muted-foreground leading-relaxed font-light">
+          <li className="font-['Geist'] text-sm text-muted-foreground leading-relaxed font-light">
             [1] Realinho, V., Vieira Martins, M., Machado, J., &amp; Baptista, L. (2021).
             Predict Students&rsquo; Dropout and Academic Success (Dataset 697). UCI Machine
             Learning Repository.
