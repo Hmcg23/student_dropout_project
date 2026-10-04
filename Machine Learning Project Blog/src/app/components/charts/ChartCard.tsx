@@ -12,11 +12,11 @@ export default function ChartCard({
   return (
     <figure className="border border-border rounded-sm p-5 my-8">
       <figcaption className="mb-4">
-        <p className="font-['DM_Mono'] text-xs tracking-widest uppercase text-muted-foreground">
+        <p className="font-['Geist_Mono'] text-xs tracking-widest uppercase text-muted-foreground">
           {title}
         </p>
         {caption && (
-          <p className="font-['DM_Sans'] text-xs text-muted-foreground mt-1 font-light">
+          <p className="font-['Geist'] text-xs text-muted-foreground mt-1 font-light">
             {caption}
           </p>
         )}

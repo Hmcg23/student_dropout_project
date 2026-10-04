@@ -46,7 +46,7 @@ export default function SmoteRecall() {
             dataKey="recall"
             position="top"
             formatter={(v: number) => `${(v * 100).toFixed(1)}%`}
-            style={{ fontFamily: "'DM Mono', monospace", fontSize: 12, fill: "#1a1a1a" }}
+            style={{ fontFamily: "'Geist Mono', monospace", fontSize: 12, fill: "#1a1a1a" }}
           />
         </Bar>
       </BarChart>

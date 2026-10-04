@@ -9,7 +9,7 @@ import ModelComparison from "../components/charts/ModelComparison";
 import RocCurves from "../components/charts/RocCurves";
 import SmoteRecall from "../components/charts/SmoteRecall";
 
-const bodyText = "font-['DM_Sans'] text-base leading-[1.85] text-foreground font-light";
+const bodyText = "font-['Geist'] text-base leading-[1.85] text-foreground font-light";
 
 function Section({
   id,
@@ -22,7 +22,7 @@ function Section({
 }) {
   return (
     <section id={id} className="max-w-3xl mx-auto px-6 py-12 border-b border-border">
-      <h2 className="font-['Lora'] text-2xl font-semibold text-foreground mb-6">{heading}</h2>
+      <h2 className="font-['Manrope'] text-lg text-foreground mb-6">{heading}</h2>
       {children}
     </section>
   );
@@ -35,15 +35,15 @@ export default function Methodology() {
         <div className="flex items-center gap-3 mb-8">
           <Link
             to="/"
-            className="font-['DM_Mono'] text-xs tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
+            className="font-['Geist_Mono'] text-xs tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
           >
             ← Overview
           </Link>
         </div>
-        <h1 className="font-['Lora'] text-4xl font-semibold leading-[1.15] tracking-tight text-foreground mb-6">
+        <h1 className="font-['Manrope'] text-xl leading-[1.15] tracking-tight text-foreground mb-6">
           Methodology
         </h1>
-        <p className="font-['DM_Sans'] text-lg text-muted-foreground leading-relaxed font-light">
+        <p className="font-['Geist'] text-lg text-muted-foreground leading-relaxed font-light">
           A more in depth description of our work: exploratory analysis, feature engineering, model selection,
           class-imbalance handling, and evaluation. Every chart on this page comes straight
           from the pipeline&rsquo;s own output on the UCI dataset.

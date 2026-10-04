@@ -17,7 +17,7 @@ export default function ConfusionMatrix() {
           {labels.map((l) => (
             <div
               key={l}
-              className="font-['DM_Mono'] text-[11px] text-muted-foreground text-center pb-2"
+              className="font-['Geist_Mono'] text-[11px] text-muted-foreground text-center pb-2"
             >
               {l}
             </div>
@@ -25,7 +25,7 @@ export default function ConfusionMatrix() {
 
           {matrix.map((row, i) => (
             <div key={labels[i]} className="contents">
-              <div className="font-['DM_Mono'] text-[11px] text-muted-foreground flex items-center pr-3 justify-end">
+              <div className="font-['Geist_Mono'] text-[11px] text-muted-foreground flex items-center pr-3 justify-end">
                 {labels[i]}
               </div>
               {row.map((value, j) => {
@@ -45,7 +45,7 @@ export default function ConfusionMatrix() {
                     }}
                   >
                     <span
-                      className="font-['DM_Mono'] text-sm"
+                      className="font-['Geist_Mono'] text-sm"
                       style={{ color: dark ? "#ffffff" : "#1a1a1a" }}
                     >
                       {value}
@@ -69,10 +69,10 @@ export default function ConfusionMatrix() {
                               : "motion-safe:slide-in-from-bottom-1"
                           }`}
                         >
-                          <p className="font-['DM_Mono'] text-xs text-foreground">
+                          <p className="font-['Geist_Mono'] text-xs text-foreground">
                             True {labels[i]} → predicted {labels[j]}
                           </p>
-                          <p className="font-['DM_Sans'] text-xs text-muted-foreground">
+                          <p className="font-['Geist'] text-xs text-muted-foreground">
                             {value} students ({((value / rowTotals[i]) * 100).toFixed(1)}% of {labels[i]})
                           </p>
                         </div>
@@ -85,10 +85,10 @@ export default function ConfusionMatrix() {
           ))}
         </div>
         <div className="flex justify-between mt-3 pl-[90px]">
-          <p className="font-['DM_Mono'] text-[10px] tracking-widest uppercase text-muted-foreground">
+          <p className="font-['Geist_Mono'] text-[10px] tracking-widest uppercase text-muted-foreground">
             Predicted label →
           </p>
-          <p className="font-['DM_Mono'] text-[10px] tracking-widest uppercase text-muted-foreground">
+          <p className="font-['Geist_Mono'] text-[10px] tracking-widest uppercase text-muted-foreground">
             Rows: true label
           </p>
         </div>

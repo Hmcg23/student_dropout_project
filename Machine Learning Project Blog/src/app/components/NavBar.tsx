@@ -17,7 +17,7 @@ export default function NavBar() {
       <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link
           to="/"
-          className="font-['DM_Mono'] text-xs tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
+          className="font-['Geist_Mono'] text-xs tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
         >
           Predicting Student Dropouts
         </Link>
@@ -27,7 +27,7 @@ export default function NavBar() {
             <Link
               key={link.to}
               to={link.to}
-              className={`font-['DM_Sans'] text-sm transition-colors ${
+              className={`font-['Geist'] text-sm transition-colors ${
                 pathname === link.to
                   ? "text-foreground border-b border-crimson pb-0.5"
                   : "text-muted-foreground hover:text-foreground"
@@ -40,14 +40,14 @@ export default function NavBar() {
             href={GITHUB_URL}
             target="_blank"
             rel="noreferrer"
-            className="font-['DM_Sans'] text-sm text-muted-foreground hover:text-foreground transition-colors"
+            className="font-['Geist'] text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             GitHub ↗
           </a>
         </nav>
 
         <button
-          className="md:hidden font-['DM_Mono'] text-xs tracking-widest uppercase"
+          className="md:hidden font-['Geist_Mono'] text-xs tracking-widest uppercase"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle navigation"
         >
@@ -63,7 +63,7 @@ export default function NavBar() {
                 key={link.to}
                 to={link.to}
                 onClick={() => setOpen(false)}
-                className="font-['DM_Sans'] text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="font-['Geist'] text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.label}
               </Link>
@@ -73,7 +73,7 @@ export default function NavBar() {
               target="_blank"
               rel="noreferrer"
               onClick={() => setOpen(false)}
-              className="font-['DM_Sans'] text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="font-['Geist'] text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               GitHub ↗
             </a>

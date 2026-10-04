@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router";
-import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Methodology from "./pages/Methodology";
@@ -23,7 +22,6 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/methodology" element={<Methodology />} />
         </Routes>
-        <Footer />
       </div>
     </BrowserRouter>
   );

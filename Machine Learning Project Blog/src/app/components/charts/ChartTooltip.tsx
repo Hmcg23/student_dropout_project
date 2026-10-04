@@ -17,7 +17,7 @@ export default function ChartTooltip({
   return (
     <div className="bg-background border border-foreground/20 rounded-sm px-3 py-2 shadow-sm">
       {heading && (
-        <p className="font-['DM_Mono'] text-xs text-foreground mb-1">{heading}</p>
+        <p className="font-['Geist_Mono'] text-xs text-foreground mb-1">{heading}</p>
       )}
       {payload.map((entry) => {
         const [value, name] = formatter
@@ -29,8 +29,8 @@ export default function ChartTooltip({
               className="inline-block w-2 h-2 rounded-[1px]"
               style={{ backgroundColor: entry.color ?? entry.payload?.fill }}
             />
-            <span className="font-['DM_Sans'] text-xs text-muted-foreground">{name}</span>
-            <span className="font-['DM_Mono'] text-xs text-foreground ml-auto pl-3">{value}</span>
+            <span className="font-['Geist'] text-xs text-muted-foreground">{name}</span>
+            <span className="font-['Geist_Mono'] text-xs text-foreground ml-auto pl-3">{value}</span>
           </div>
         );
       })}

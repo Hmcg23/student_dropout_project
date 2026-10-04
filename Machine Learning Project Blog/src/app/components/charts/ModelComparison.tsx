@@ -44,7 +44,7 @@ export default function ModelComparison() {
           }
         />
         <Legend
-          wrapperStyle={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12 }}
+          wrapperStyle={{ fontFamily: "'Geist', sans-serif", fontSize: 12 }}
           iconType="square"
           iconSize={8}
         />

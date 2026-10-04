@@ -48,8 +48,8 @@ function SingleRoc({ cls }: { cls: string }) {
 
   return (
     <div>
-      <p className="font-['DM_Mono'] text-xs text-foreground mb-1">{cls}</p>
-      <p className="font-['DM_Sans'] text-[11px] text-muted-foreground mb-2 font-light">
+      <p className="font-['Geist_Mono'] text-xs text-foreground mb-1">{cls}</p>
+      <p className="font-['Geist'] text-[11px] text-muted-foreground mb-2 font-light">
         RF AUC {rfAuc.toFixed(2)} · XGB AUC {xgbAuc.toFixed(2)}
       </p>
       <ResponsiveContainer width="100%" height={190}>
@@ -120,17 +120,17 @@ export default function RocCurves() {
         ))}
       </div>
       <div className="flex items-center gap-5 mt-4">
-        <span className="flex items-center gap-2 font-['DM_Sans'] text-xs text-muted-foreground">
+        <span className="flex items-center gap-2 font-['Geist'] text-xs text-muted-foreground">
           <span className="inline-block w-4 h-0.5" style={{ backgroundColor: SERIES_PRIMARY }} />
           Random Forest
         </span>
-        <span className="flex items-center gap-2 font-['DM_Sans'] text-xs text-muted-foreground">
+        <span className="flex items-center gap-2 font-['Geist'] text-xs text-muted-foreground">
           <svg width="16" height="2">
             <line x1="0" y1="1" x2="16" y2="1" stroke={SERIES_SECONDARY} strokeWidth="2" strokeDasharray="4 3" />
           </svg>
           XGBoost
         </span>
-        <span className="flex items-center gap-2 font-['DM_Sans'] text-xs text-muted-foreground">
+        <span className="flex items-center gap-2 font-['Geist'] text-xs text-muted-foreground">
           <svg width="16" height="2">
             <line x1="0" y1="1" x2="16" y2="1" stroke={GRID} strokeWidth="2" strokeDasharray="3 3" />
           </svg>
